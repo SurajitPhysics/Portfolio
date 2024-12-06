@@ -1,0 +1,104 @@
+.achievement{
+    padding: 13rem 0 2rem 0;
+}
+
+
+.achievement_Title_section{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+.achievement_mainContainer{
+    display: flex;
+    gap: 5rem;
+    margin-top: 8rem;
+    justify-content:space-evenly;
+    position: relative;
+    
+}
+
+
+.achievement_left_title, .achievement_right_title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 1.5rem 0 8rem 0;
+    font-family: "Platypi", serif;
+    font-weight: 600;
+}
+
+
+
+
+
+.achievement_left_list_container, .achievement_right_list_container{
+    display: flex;
+    justify-content:flex-start;
+    border-bottom: .01rem solid rgb(89, 90, 89);
+    padding: 1.2rem 1.2rem .6rem 1.2rem;
+    gap: 1.5rem;
+    margin: 3rem 0 1.5rem 0;
+    color: rgba(255, 255, 255, 0.889);
+}
+
+
+.achievement_left_list_left_icon, .achievement_right_list_left_icon{
+    font-size: 3.2rem;
+    color: rgb(0, 217, 255);
+}
+
+.achievement_left_list_right, .achievement_right_list_right{
+    flex: 1;
+}
+
+
+.achievement_left_list_right_title, .achievement_right_list_right_title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom:1rem;
+    font-family: "Roboto Slab", serif;
+}
+
+.achievement_left_list_right_child, .achievement_right_list_right_child{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.achievement_left_list_right_child_organizer,.achievement_right_list_right_child_organizer{
+    font-weight: 600;
+    font-family: "Roboto Mono", monospace;
+}
+
+.achievement_left_list_right_rank, .achievement_right_list_right_sponsore{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .8rem 0 0 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.achievement_left_list_right_child_year, .achievement_right_list_right_child_year{
+    font-style: oblique;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+@media only screen and (max-width:880px){
+    .achievement_mainContainer{
+        flex-direction: column;
+    }
+    .achievement_left_list_right_title, .achievement_right_list_right_title{
+        font-size: 1.8rem;
+    }
+    .achievement_left_list_right_rank, .achievement_right_list_right_sponsore{
+        font-size: 1.4rem;
+    }
+    .achievement_left_list_right_child, .achievement_right_list_right_child{
+        font-size: 1.4rem;
+    }
+    .achievement_left_list_container, .achievement_right_list_container{
+        margin: 2rem .6rem 1rem .6rem;
+        padding: .8rem .8rem .6rem .8rem;
+    }
+}

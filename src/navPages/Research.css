@@ -1,0 +1,29 @@
+.research{
+    padding-bottom: 10rem;
+}
+
+.researchTitle-section{
+    padding: 8rem 0 5rem 0;
+    text-align: center;
+}
+
+
+
+
+.navpage_research_item{
+    display: grid;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:500px auto;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 1085px){
+    .navpage_research_item{
+        display:inline;
+    }
+
+    
+}

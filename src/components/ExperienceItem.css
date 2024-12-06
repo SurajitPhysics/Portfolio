@@ -1,0 +1,95 @@
+.experienceItem{
+    display: flex;
+    justify-content: center;
+    position: relative;
+ 
+}
+.experienceItem-box{
+    border-right:.2rem solid var(--blue-bg );
+
+}
+.experienceItem-content{
+    position: relative;
+    padding-right: 2rem;
+}
+.experienceItem-content::before{
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: -.89rem;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: rgb(122, 121, 121);
+}
+.experienceItem__content,.experienceItem-border{
+    height:auto;
+    width:600px;
+    position: relative;
+    margin-top: 1rem;
+}
+.experienceItem-border::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: .5s;
+    background:linear-gradient(-170deg, var(--dark-ryl),var(--dark-ryl),var(--dark-ryl),#4d4d4d, #b5f0e4); 
+    inset: -1px;
+    filter: blur(2px);
+    
+}
+
+.experienceItem__content{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    background: var(--dark-ryl);
+}
+
+.experienceItem-year{
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+.experienceItem-year i{
+    font-size: 1.2rem;
+    padding: 0 .5rem .5rem 0;
+}
+.experienceItem-degree{
+    font-size: 1.35rem;
+    padding-bottom: .4rem;
+}
+.experienceItem-subject{
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    
+
+}
+
+.experienceItem-institute{
+    
+    padding: .5rem 0;
+    font-size: 1.35rem;
+
+}
+
+@media only screen and (max-width:768px){
+    .experienceItem__content,.experienceItem-border{
+        width:350px;
+    }
+}
+@media only screen and (max-width:380px){
+    .experienceItem__content,.experienceItem-border{
+        width:300px;
+    }
+}
+@media only screen and (max-width:350px){
+    .experienceItem__content,.experienceItem-border{
+        width:230px;
+    }
+}
+@media only screen and (max-width:290px){
+    .experienceItem__content,.experienceItem-border{
+        width:200px;
+    }
+}
